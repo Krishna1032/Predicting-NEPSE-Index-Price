@@ -4,7 +4,7 @@ import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-
+# url
 path = "https://www.sharesansar.com/index-history-data"
 driver = webdriver.Chrome()
 driver.maximize_window()
@@ -31,8 +31,6 @@ end_date.send_keys(str(end_date))
 
 search = driver.find_element(By.XPATH, '//button[@class="btn btn-org"]')
 search.click()
-
-# time.sleep(3)
 
 
 select = driver.find_element(By.XPATH, '//select[@name="myTable_length"]')
